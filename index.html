@@ -3,6 +3,8 @@
 <head>
   <title>Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slider.css">
   <style media="screen">
     body {
       font-family: 'Raleway', sans-serif;
@@ -12,7 +14,11 @@
 <body topmargin="69" leftmargin="69" background="img\bg1.jpg" Text="white">
 <h1>SIWADOL M.</h1>
 <p>GitHub Pages</p>
+<hr color="white" size="1" width="80%"/>
+<h2 align="center">CH 4 </h2>
+
 <nav align="center">
+  <br>
   <a href="ch4_1_srtat.html" target="blank" style="color:white;">ch4_1_srtat.html</a>
   <br>
   <a href="ch4_2_heading.html" target="blank" style="color:white;">ch4_2_heading.html</a>
@@ -31,5 +37,40 @@
   <br>
   <a href="ch4_9_header.html" target="blank" style="color:white;">ch4_9_header.html</a>
 </nav>
+<br>
+<br>
+<hr color="white" size="1" width="80%"/>
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>อย่าเพิ่งเบื่อผมก็แล้วกัน ยังไงผมก็อยู่อีกนานพอสมควร</q>
+    <p class="author">- พล.อ.ประยุทธ์ จันทร์โอชา นายกรัฐมนตรี</p>
+  </div>
+
+  <div class="mySlides">
+    <q>ดูธรรมะธรรมโมมั่งดิดูปรัชญา คําคม วิถีชีวิต ปรัชญาข่มใจข่มกิเลสตัณหา</q>
+    <p class="author">- ศาสดา</p>
+  </div>
+
+  <div class="mySlides">
+    <q>เฮ้อ...</q>
+    <p class="author">- Siwadol</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script src="slider.js">
+
+</script>
 </body>
 </html>
