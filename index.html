@@ -6,23 +6,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/bg.css">
+  <link rel="stylesheet" href="/css/snow.css">
   <style media="screen">
     body {
       font-family: 'Raleway', sans-serif;
     }
   </style>
+  <style>
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+</style>
+
 </head>
-<body topmargin="69" leftmargin="69"  Text="white">
+<body topmargin="50" leftmargin="69"  Text="white">
 <h1>SIWADOL M.</h1>
-<p>GitHub Pages</p>
-<p>Ver.β 0.2</p>
-<p>Last Update : 8:07 PM 7/18/2020</p>
+<p>Siwadol's GitHub Pages</p>
+<p>Ver.β 0.3</p>
+<p>Last Update : 8:40 PM 7/18/2020</p>
 <label for="file">Work In Progress :</label>
-<progress id="file" value="2" max="100"> 2% </progress>
+<progress id="file" value="3" max="100"> 3% </progress>
 <hr color="white" size="1" width="80%"/>
 <h2 align="center">CH 4 </h2>
-
-
 <nav align="center">
   <br>
   <a href="ch4_1_srtat.html" target="blank" style="color:white;">ch4_1_srtat.html</a>
@@ -48,7 +59,7 @@
 <hr color="white" size="1" width="80%"/>
 <div class="slideshow-container">
 
-  <!-- Full-width slides/quotes -->
+
   <div class="mySlides">
     <q>ดูธรรมะธรรมโมมั่งดิดูปรัชญา คําคม วิถีชีวิต ปรัชญาข่มใจข่มกิเลสตัณหา</q>
     <p class="author">- ศาสดา</p>
@@ -64,19 +75,73 @@
     <p class="author">- Siwadol</p>
   </div>
 
-  <!-- Next/prev buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<!-- Dots/bullets/indicators -->
 <div class="dot-container">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-<script src="js\slider.js">
+<hr color="white" size="1" width="80%"/>
+<article class="">
+    <header>
+      <h1>Change Log</h1>
+    </header>
+    <section>
+  <pre align="left">
+    <h2>Add Quote Bar
+Add New Background CSS Animation
+Add SnowFall Animation Si's Modified <a href="https://pajasevi.github.io/CSSnowflakes/" target="blank" style="color:white;">CSSnowflakes</a>
 
-</script>
+</h2>
+    </section>
+    <footer>By <a href="https://github.com/armsiwadol69" target="blank" style="color:white;">Siwadol M.</a></footer>
+    <footer><h4>THIS PROJECT IS A PART OF ADVANCE COMPUTER PROGRAMMING | NON PROFIT PROJECT</h4></footer>
+
+
+</article>
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  △
+  </div>
+  <div class="snowflake">
+  ▽
+  </div>
+  <div class="snowflake">
+  ◇
+  </div>
+  <div class="snowflake">
+  ◢
+  </div>
+  <div class="snowflake">
+  ◣
+  </div>
+  <div class="snowflake">
+  ◬
+  </div>
+  <div class="snowflake">
+    ⟐
+  </div>
+  <div class="snowflake">
+    ⬖
+  </div>
+  <div class="snowflake">
+    ⬠
+  </div>
+  <div class="snowflake">
+    ⬡
+  </div>
+  <div class="snowflake">
+    ⎔
+  </div>
+  <div class="snowflake">
+    ◊
+  </div>
+</div>
+
+
+<script src="js\slider.js"></script>
 </body>
 </html>
