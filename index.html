@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/bg.css">
+  <link rel="stylesheet" href="css/fade.css">
+
   <style media="screen">
     body {
       font-family: 'Raleway', sans-serif;
@@ -28,15 +30,17 @@
 
 </head>
 <body topmargin="50" leftmargin="69"  Text="white">
+<div class="fade-in">
 <a Name="home"> <h1>SIWADOL M.</h1> </a>
 <p>Siwadol's GitHub Pages</p>
-<p>Ver.β 0.4</p>
-<p>Last Update : 00:00 PM 7/19/2020</p>
+<p>Ver.β 0.5</p>
+<p>Last Update : 01:00 AM 7/19/2020</p>
 <label for="file">Work In Progress :</label>
 <progress id="file" value="10" max="100"> 10% </progress>
-<nav align="center">
 
+<nav align="center">
   <a href="#home" target="blank"><img src="img\menu_b\menu_1.png" target="blank" width="200x" ></a>
+  <a href="#" target="blank"><img src="img\menu_b\pp.png" target="blank" width="200px" ></a>
   <a href="#ch4" target="blank"><img src="img\menu_b\ch4_n.png" target="blank" width="200px" ></a>
   <a href="#ch5" target="blank"><img src="img\menu_b\menu_2.png" target="blank" width="200px" ></a>
   <a href="#ch6" target="blank"><img src="img\menu_b\menu_3.png" target="blank" width="200px" ></a>
@@ -44,6 +48,7 @@
   <a href="#ch8" target="blank"><img src="img\menu_b\menu_5.png" target="blank" width="200px" ></a>
   <a href="#end" target="blank"><img src="img\menu_b\end.png" target="blank" width="200px" ></a>
 </nav>
+
 <hr color="white" size="1" width="80%"/>
 <a Name="ch4"></a> <h2 align="center">CHAPTER 4 </h2>
 <nav align="center">
@@ -118,9 +123,9 @@
 </div>
 <hr color="white" size="1" width="80%"/>
 <article class="">
-    <header>
-      <a name="end"></a> <h1>Change Log | July 18, 2020</h1>
-    </header>
+
+      <a name="end"></a> <h1>Change Log | July 19, 2020</h1>
+
     <section>
   <pre align="left">
     <h2>Add Quote Bar
@@ -130,8 +135,10 @@ Change SnowFall Font Size to 3em
 Add Menu
 Add CHAPTER 5-8 (WORK IN PROGRESS)
 Add Back To Home For All .html | Back To Head Button
+Add BGM (ARKNIGHTS VOID)
 </h2>
-    </section>
+</section>
+
     <div>
       <a href="#home" target="blank"><img class="marginauto" src="img\menu_b\head.png" align="center" target="blank" width="200px" ></a>
     </div>
@@ -180,9 +187,14 @@ Add Back To Home For All .html | Back To Head Button
     ◊
   </div>
 </div>
-<iframe width="0" height="0" src="https://www.youtube.com/embed/FkpruWhWP84?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+  <audio controls autoplay id="ostk" class="marginauto">
+    <source src="m/ost1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</div>
 <script src="js\slider.js"></script>
-</body>
+<script src="js\vol.js"> </script>
 </html>
