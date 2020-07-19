@@ -62,7 +62,7 @@
 }
 
 /* Add an italic font style to all quotes */
-q {font-family: 'Charmonman', cursive; font-size: 50px}
+q {font-family: 'Sriracha', cursive; font-size: 50px}
 
 /* Add a blue color to the author */
-.author {color:#F29898;}
+.author {font-family: 'Sriracha', cursive; color:#F29898; font-size: 30px}
