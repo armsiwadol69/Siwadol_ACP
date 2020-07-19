@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-69deg, #C33764, #1D2671, #0f0c29, #302b63, #24243e, #800080, #ffc0cb);
+	background: linear-gradient(-69deg, #DE6262, #FFB88C, #d53369);
 	background-size: 400% 400%;
 	animation: gradient 13s ease infinite;
 
@@ -16,6 +16,3 @@ body {
 		background-position: 0% 50%;
 	}
 }
-a {
-      text-decoration:none;
-   }
