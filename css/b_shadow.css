@@ -3,9 +3,9 @@ transition: 1s ease;
 }
 
 .grow img:hover{
--webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
+-webkit-transform: scale(1.15);
+-ms-transform: scale(1.15);
+transform: scale(1.15);
 transition: 1s ease;
 
 }
