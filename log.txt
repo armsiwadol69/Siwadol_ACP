@@ -1,0 +1,15 @@
+☑ Add New Background CSS Animation
+☑ Add SnowFall Animation Si's Modified <a href="https://pajasevi.github.io/CSSnowflakes/" target="blank" style="color:white;">CSSnowflakes</a>
+☑ Change SnowFall Font Size to 3em
+☑ Add Menu
+☑ Add CHAPTER 5-8 (WORK IN PROGRESS)
+☑ Add Back To Home For All .html | Back To Head Button
+☑ Add BGM (ARKNIGHTS VOID)
+☑ Fix Android SnowFall Bug
+☑ Add Button Grow Animation (CSS)
+☑ Add NEW,STB & WIP Banner
+☑ Change Font To Rubik (Old is Raleway)
+☑ Add Mouse Over Comments
+☑ Add Index Page / BGM. For CHAPTER 4-5
+☑ Add GitHub's Profile
+
