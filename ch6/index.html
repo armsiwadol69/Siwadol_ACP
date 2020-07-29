@@ -19,16 +19,13 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="../f/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="../css/slider.css">
-  <link rel="stylesheet" href="../css/bg_ch6.css">
-  <link rel="stylesheet" href="../css/fade.css">
-  <link rel="stylesheet" href="../css/b_shadow.css">
-  <link rel="stylesheet" href="../css/2c.css">
+<link rel="stylesheet" href="../bootstrap4_data/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bg_ch6.css">
 
 <style media="screen">
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
     body {
-      font-family: 'Quicksand', sans-serif;
+      background-color:#f5f5f5;
     }
     .marginauto {
     margin: 10px auto 20px;
@@ -37,8 +34,8 @@
   .ts {
     text-shadow: 3px 3px #000000;
     color: white;
-
   }
+
   </style>
 
 <style>
@@ -53,73 +50,138 @@
 </style>
 
 </head>
-<body topmargin="50" leftmargin="69"  Text="white">
-<div class="fade-in">
-<a Name="home"> <h1 class="ts">SIWADOL M. β</h1> </a>
-<p class="">Welcome To CHAPTER 6 MENU.</p>
-<h1 align="center" class="ts">CHAPTER 6</h1>
-<h2 align="center"class="ts">There are 2 types of .html file.&nbsp;&nbsp;&nbsp;α is Book's Example,&nbsp;&nbsp;&nbsp;β is Siwadol's Works.</h2>
-<br>
-<br>
-<div class="row" hidden>
-  <div class="column" style="background-color: rgba(0, 0, 0, 0.1)">
-    <h3 align="center" class="ts">Type α : Book's Example</h3>
-    <nav align="center" hidden>
-      <br>
-      <a href="ch5_6_Paragraph_a.html"  style="color:white;">ch5_6_Paragraph_a.html</a>
-      <br>
-      <a href="ch5_7_brakline_a.html"  style="color:white;">ch5_7_brakline_a.html</a>
-      <br>
-      <a href="ch5_8_preformat_a.html" style="color:white;">ch5_8_preformat_a.html</a>
-      <br>
-      <a href="ch5_9_horizontal-line_a.html" style="color:white;">ch5_9_horizontal-line_a.html</a>
-      <br>
-      <a href="ch5_10_quotation_a.html"  style="color:white;">ch5_10_quotation_a.html</a>
-      <br>
-      <a href="ch5_20_div_a.html"  style="color:white;">ch5_20_div_a.html</a>
-      <br>
-      <a href="ch5_12_list_a.html"  style="color:white;" >ch5_12_list_a.html</a>
-      <br>
-      <a href="ch5_13_NestingList_a.html"  style="color:white;">ch5_13_NestingList_a.html</a>
-      <br>
-      <a href="ch5_14_unorderList_a.html"  style="color:white;">ch5_14_unorderList_a.html</a>
-      <br>
-      <a href="ch5_15_definitionList_a.html"  style="color:white;">ch5_15_definitionList_a.html</a>
-      <br>
-      <a href="ch_10f_quotation-ciation_a.html"  style="color:white;">ch_10f_quotation-ciation_a.html</a>
-    </nav>
-    <img src="..\img\new_ban.png" width="100px" alt="" class="marginauto">
+<body>
+<div class="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+    <a class="navbar-brand" href="../index_b.html">
+      <img src="../f/apple-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    </a>
+    <a class="navbar-brand" href="#">Siwadol's Page II Beta</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Chapter Section
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../ch4/index.html">Chapter 4</a>
+            <a class="dropdown-item" href="../ch5/index.html">Chapter 5</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#youarehere" >Chapter 6</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#WIPCH" >Chapter 7</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#WIPCH" >Chapter 8</a>
+            <a class="dropdown-item" href="#"></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">WIP / Ver.0.1 Beta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="" style="text-align: center;">
+  <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.1);color: white;">
+  <h1 class="display-4">CHAPTER 6</h1>
+  <p class="lead">Welcome To Chapter 6</p>
+  <hr class="my-4">
+</div>
+</div>
+<div class="container" style="margin-top: 30px;">
+  <div class="row" >
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inserting image files for webpages.</h5>
+          <p class="card-text">Page 186.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inserting video data files for webpages.</h5>
+          <p class="card-text">Page 192.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inserting audio data files for webpages.</h5>
+          <p class="card-text">Page 196.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="column" style="background-color: rgba(0, 0, 0, 0.1)">
-    <h3 align="center" class="ts">Type β : Siwadol's Works</h3>
-    <nav align="center" hidden>
-      <br>
-      <a href="ch5_6_Paragraph_b.html"  style="color:white;">ch5_6_Paragraph_b.html</a>
-      <br>
-      <a href="ch5_7_brakline_b.html"  style="color:white;">ch5_7_brakline_b.html</a>
-      <br>
-      <a href="ch5_8_preformat_b.html" style="color:white;">ch5_8_preformat_b.html</a>
-      <br>
-      <a href="ch5_9_horizontal-line_b.html" style="color:white;">ch5_9_horizontal-line_b.html</a>
-      <br>
-      <a href="ch5_10_quotation_b.html"  style="color:white;">ch5_10_quotation_b.html</a>
-      <br>
-      <a href="ch5_20_div_b.html"  style="color:white;">ch5_20_div_b.html</a>
-      <br>
-      <a href="ch5_12_list_b.html"  style="color:white;" >ch5_12_list_b.html</a>
-      <br>
-      <a href="ch5_13_NestingList_b.html"  style="color:white;">ch5_13_NestingList_b.html</a>
-      <br>
-      <a href="ch5_14_unorderList_b.html"  style="color:white;">ch5_14_unorderList_b.html</a>
-      <br>
-      <a href="ch5_15_definitionList_b.html"  style="color:white;">ch5_15_definitionList_b.html</a>
-      <br>
-      <a href="ch_10f_quotation-ciation_b.html"  style="color:white;">ch_10f_quotation-ciation_b.html</a>
-    </nav>
-    <img src="..\img\new_ban.png" width="100px" alt="" class="marginauto">
-
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inserting video image files from external sources.</h5>
+          <p class="card-text">Page 200.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Graphic creation with CANVAS / SVG.</h5>
+          <p class="card-text">Page 202.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inserting a map on a webpage.(Google Maps)</h5>
+          <p class="card-text">Page 216.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="row d-flex justify-content-center" style="margin-top: 30px;">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">User Interaction <br>
+            <br>
+           </h5>
+          <p class="card-text">Page 220.</p>
+          <div class="text-center">
+          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#undone">view .html file</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 <a href="..\index.html"><img class="marginauto" src="..\img\menu_b\bindex.png" align="center" target="blank" width="200px" ></a>
@@ -165,14 +227,70 @@
     <div class="snowflake">
     ☆
     </div>
-  </div>
-  <footer>
-  <h4><a href="https://github.com/armsiwadol69" target="blank" style="color:white;">Siwadol M.</a></h4>
-  <h5>THIS PROJECT IS A PART OF ADVANCE COMPUTER PROGRAMMING | NON PROFIT PROJECT</h5>
-  <h5>Now Playing : "???"</h5>
-  </footer>
 
-</div>
+
+
+
+
+
+    <div class="modal fade" id="WIPCH" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Information : Chapter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Chapter that you select is <br>
+            WORK IN PROGRESS</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="youarehere" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Information : Chapter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>YOU ARE HERE!</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="undone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Information : .html file</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: center;">
+            <h5>UNFINISHED</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="..\js\slider.js"></script>
 <script src="..\js\vol.js"> </script>
 </html>
