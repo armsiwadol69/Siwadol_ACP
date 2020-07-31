@@ -2,12 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Inserting image files for webpages | SiWADOL</title>
+    <title>Inserting video files for webpages | SiWADOL</title>
     <link rel="stylesheet" href="../bootstrap4_data/css/bootstrap.min.css">
     <style media="screen">
       @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
       body {font-family: 'Sarabun', sans-serif;}
+      .vid-c {display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 100%;
+ height: auto;}
     </style>
+
   </head>
   <body>
     <!--Jambotron-->
@@ -20,23 +26,126 @@
 </div>
     </div>
     <!--Jambotron End-->
-    <div class="container">
-
-
-    <hr class="4">
+    <div class="container-fluid">
+    <div class="row">
+     <div class="col-9">
+       <div class="card" style="">
+  <div class="card-body">
+    <h3 class="card-title">Example / Video </h3>
+    <div style="" class="vid-c">
+    <video style="width: 100%;height: auto;" src="vid_ch6\dual_b.mp4" controls type="video/mp4" poster="img_ch6\pi1.png"></video>
     </div>
+  </div>
+</div>
+     </div>
+     <div class="col-3 d-flex align-items-stretch">
+       <div class="card bg-light w-auto" style="">
+ <div class="card-header">Description</div>
+ <div class="card-body">
+   <h4 class="card-title">การแทรกวีดีโอ</h4>
+   <p class="card-text">
+     สามารถทำได้โดย<br> <code>&lt;video src="ที่อยู่ของไฟล์"&gt;&lt;/video&gt;</code>
+     <h4>Attributes</h4>
+     	autoplay = วีดีโอจะเล่นอัตโนมัติเมือเพจโหลดเสร็จ<br>
+      controls = แสดงแผงควบคุมการเล่น<br>
+      loop = เมื่อเล่นจบจะเล่นซ้ำอัตโนมัติ<br>
+      poster = แสดงรูปก่อนที่จะเริ่มเล่น/ยังโหลดไม่เสร็จ<br>
+      muted = ปิดเสียงเมื่อเล่น (แต่สามารถเปิดได้) <br>
+      width / height = กำหนดความกว้าง หรือ ความสูงของวีดีโอ
+    <h4>Responsive Video</h4>
+    อยากให้วีดีโอปรับขนาดตามขนาดหน้าจอก็สามารถทำได้โดย style="width: 100%;height: auto;"
+    หรือจะสร้าง class เองก็ได้
+    </p>
+ </div>
+     </div>
 
-<div class="container">
-<div class="row d-flex justify-content-center">
-  <div class="col-0">
-    <div class="card text-white bg-warning" style="width: 30rem;">
+     </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="col-6">
+        <div class="card" style="">
+   <div class="card-body">
+     <h3 class="card-title">Video <b>without</b> Attribute Poster </h3>
+     <div style="" class="vid-c">
+     <video style="width: 100%;height: auto;" src="vid_ch6\pupa.mp4" controls type="video/mp4"></video>
+     </div>
+   </div>
+  </div>
+      </div>
+      <div class="col-6">
+        <div class="card" style="">
+      <div class="card-body">
+      <h3 class="card-title">Video <b>with</b> Attribute Poster </h3>
+      <div style="" class="vid-c">
+      <video style="width: 100%;height: auto;" src="vid_ch6\pupa.mp4" controls type="video/mp4" poster="img_ch6\avg_31_4.png"></video>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="col-6">
+        <div class="card" style="">
+   <div class="card-body">
+     <h3 class="card-title">Video <b>without</b> Attribute loop </h3>
+     <div style="" class="vid-c">
+     <video style="width: 100%;height: auto;" src="vid_ch6\loop.mp4" controls type="video/mp4" poster="img_ch6\avg_5_5_chen.png"></video>
+     </div>
+   </div>
+  </div>
+      </div>
+      <div class="col-6">
+        <div class="card" style="">
+      <div class="card-body">
+      <h3 class="card-title">Video <b>with</b> Attribute loop </h3>
+      <div style="" class="vid-c">
+      <video style="width: 100%;height: auto;" src="vid_ch6\loop.mp4" controls loop type="video/mp4" poster="img_ch6\avg_5_5_chen.png"></video>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="col-6">
+        <div class="card" style="">
+   <div class="card-body">
+     <h3 class="card-title">Video <b>with</b> Attribute Autoplay & muted </h3>
+     <div style="" class="vid-c">
+     <video style="width: 100%;height: auto;" src="vid_ch6\loop.mp4" autoplay muted controls type="video/mp4" poster="img_ch6\avg_5_5_chen.png"></video>
+     </div>
+   </div>
+  </div>
+      </div>
+      <div class="col-6">
+        <div class="card" style="">
+      <div class="card-body">
+      <h3 class="card-title">Video <b>with</b> Attribute Autoplay & muted but no controls </h3>
+      <div style="" class="vid-c">
+      <video style="width: 100%;height: auto;" src="vid_ch6\dual_b.mp4" muted autoplay loop type="video/mp4" poster="img_ch6\avg_5_5_chen.png"></video>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container" style="margin-top:20px">
+<div class="row d-flex justify-content-between">
+  <div class="col-6 d-flex align-items-stretch">
+    <div class="card text-white bg-warning" style="width:100%">
   <div class="card-header"><h4>Menu</h4> </div>
   <div class="card-body">
     <a href="index.html" class="btn btn-block btn-outline-dark" style="text-align: center;" >BACK TO CAHPTER INDEX</a>
     <a href="..\index.html" class="btn btn-block btn-outline-dark" style="text-align: center;" >BACK TO HOME / INDEX</a>
   </div>
-
   </div>
+</div>
+<div class="col-6 d-flex align-items-stretch">
+  <div class="card text-white bg-secondary" >
+  <div class="card-header">Description</div>
+  <div class="card-body">
+    <h5 class="card-title">ไฟล์วีดีโอมีความละเอียดต่ำเพื่อลด bandwidth & flie size</h5>
+
 
 </div>
 </div>
