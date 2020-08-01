@@ -91,7 +91,7 @@
   <div class="card-body">
     <h5 class="card-title">Chapter 4 is Now Available!</h5>
     <p class="card-text"></p>
-      <a href="ch4/index.html" class="btn btn-block btn-success" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View</a>
+      <a href="ch4/index.html" class="btn btn-block btn-info" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View</a>
   </div>
        </div>
       </div>
@@ -103,7 +103,7 @@
       <div class="card-body">
       <h5 class="card-title">Chapter 5 is Now Available!</h5>
       <p class="card-text"> </p>
-      <a href="ch5/index.html" class="btn btn-block btn-success" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View</a>
+      <a href="ch5/index.html" class="btn btn-block btn-info" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View</a>
       </div>
        </div>
       </div>
@@ -115,7 +115,7 @@
   <div class="card-body">
     <h5 class="card-title">Chapter 6 is Now Available!</h5>
     <p class="card-text"> </p>
-    <a href="ch6/index.html" class="btn btn-block btn-success" style="text-align: center;">View</a>
+    <a href="ch6/index.html" class="btn btn-block btn-info" style="text-align: center;">View</a>
   </div>
        </div>
       </div>
@@ -186,6 +186,20 @@
     <source src="m/ost1.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+  <audio id="welcome">
+    <source src="m/CN_024.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script type="text/javascript">
+  var audio = document.getElementById("welcome");
+  audio.volume = 0.2;
+  audio.loop = false;
+  </script>
+  <script type="text/javascript">
+  setTimeout(function(){
+      document.getElementById("welcome").play();}, 500)
+
+  </script>
   <br>
   <h6 style="color:white;">Now Playing : Arknights Ost.Menu "Void"</h6>
 </div>
@@ -215,7 +229,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Changlog</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Changlog / Only ashes will remain…</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
