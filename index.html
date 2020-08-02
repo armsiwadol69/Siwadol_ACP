@@ -40,15 +40,17 @@
       font-family: Arial, sans-serif;
       text-shadow: 0 0 5px #000;
     }
+    .card{background-color: rgba(0, 0, 0, 0.15);color:white;}
+
 
     @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
     </style>
   </head>
   <body>
     <div class="">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+<nav class="navbar navbar-expand-lg navbar-dark text-light">
   <a class="navbar-brand" href="index.html">
-    <img src="f/apple-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="f/apple-icon.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
   </a>
   <a class="navbar-brand" href="#">Siwadol's Page II | Kagerou</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,10 +70,12 @@
           Chapter Section
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item disabled" href="#">DONE</a>
           <a class="dropdown-item" href="ch4/index.html">Chapter 4</a>
           <a class="dropdown-item" href="ch5/index.html">Chapter 5</a>
           <a class="dropdown-item" href="ch6/index.html">Chapter 6</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="#">WIP</a>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#WIPCH" >Chapter 7</a>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#WIPCH" >Chapter 8</a>
           <a class="dropdown-item" href="#"></a>
@@ -91,7 +95,11 @@
 </nav>
   </div>
   <div class="">
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(0,0,0,0.2);height: 200px;">
+    <div style="background-color: rgba(0,0,0,0);text-align:center;margin-left: auto;margin-right: auto;">
+      <img style="max-width: 1200px;width: 100%;height: auto;"src="img\ss1.png" alt="">
+
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(0,0,0,0);height: 150px;">
   <div class="container">
     <h1 class="display-4" style="color:white;">Chapter Section</h1>
     <p class="lead" style="color:white;">Select the chapter that you want to view.</p>
@@ -101,7 +109,7 @@
    <div class="container" style="margin-top: 30px">
     <div class="row d-flex justify-content-center">
       <div class="col-4">
-        <div class="card">
+        <div class="card" style="">
   <div class="card-header">
     <h3>CHAPTER 4</h3>
   </div>
@@ -120,7 +128,7 @@
       <div class="card-body">
       <h5 class="card-title">Chapter 5 is Now Available!</h5>
       <p class="card-text"> </p>
-      <a href="ch5/index.html" class="btn btn-block btn-info" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View</a>
+      <a href="ch5/index.html" class="btn btn-block btn-info" style="text-align: center;" data-toggle="tooltip" data-placement="bottom" title="Old chapter index ver.">View&nbsp;<span class="badge badge-danger">New</span></a>
       </div>
        </div>
       </div>
@@ -132,7 +140,7 @@
   <div class="card-body">
     <h5 class="card-title">Chapter 6 is Now Available!</h5>
     <p class="card-text"> </p>
-    <a href="ch6/index.html" class="btn btn-block btn-info" style="text-align: center;">View</a>
+    <a href="ch6/index.html" class="btn btn-block btn-info" style="text-align: center;">View&nbsp;<span class="badge badge-danger">New</span></a>
   </div>
        </div>
       </div>
@@ -183,7 +191,7 @@
     <div class="card-header">Siwadol's Page II \ Kagerou | Developer</div>
       <div class="card-horizontal">
           <div class="img-square-wrapper">
-              <img style="height: 154px;" src="img/texas.jpg" alt="Card image cap">
+              <img style="height: 100%;width:154px" src="img/texas.jpg" alt="Card image cap">
           </div>
           <div class="card-body">
               <h4 class="card-title">Siwadol M.</h4>
@@ -252,9 +260,13 @@
         </button>
       </div>
       <div class="modal-body">
+      S.Kagerou B.Reed<br>
       7/29/2020 : Make a new bootstrap index. <br>
       7/31/2020 : Everything look fine. <br>
-      8/1/2020 : Chapter 6 is DONE!
+      8/1/2020 : Chapter 6 is DONE!<br>
+      <hr>
+      S.Akaito B.Vigna<br>
+      *No later than 8/10/2020.<br>
       <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -327,7 +339,7 @@
   </div>
 <footer>
 <div style="vertical-align: middle;;margin-top: 69px;background-color: rgba(255, 255, 255, 0.2);width:100%;height:69px;padding: 30px 0;text-align:center;">
-  <h4>Siwadol's Page II | Reed.Kagerou</h4>
+  <h4>Siwadol's Page II | Kagerou.Reed</h4>
 </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
