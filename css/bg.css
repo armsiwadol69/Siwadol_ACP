@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(128deg, rgba(182,218,62,1) 0%, rgba(160,160,160,1) 66%, rgba(202,202,202,1) 100%);
+	background: radial-gradient(circle, #69d5e0, #59cee7, #50c5ed, #53bcf1, #5fb2f2, #61a6ed, #659ae7, #6c8edf, #647fd4, #5c71c8, #5662bc, #5054b0);
 	background-size: 400% 400%;
 	animation: gradient 13s ease infinite;
 
