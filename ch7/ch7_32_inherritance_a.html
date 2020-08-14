@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<title>32_inheritance</title>
+	<style>
+	/*	Style Sheet heading Tag	*/
+	body{
+		font-family: 'Trirong', sans-serif;
+		padding: 10px;
+		color:black;
+	}
+
+	div{
+		border: 15px solid;
+		border-color:darkgray;
+		padding: 2em;
+		overflow:hidden;
+	}
+
+	p{
+		color:deepskyblue;
+		font-family: 'Trirong', serif;
+		font-weight: bold;
+	}
+
+	img{
+		float: left; /*makes text wrap it*/
+		margin-right: 2em;
+	}
+	</style>
+</head>
+<body>
+	<div><h1>CSS Inheritance</h1></div>
+
+	<div>
+	<!-- JJJ Family-->
+	<img src="img_ch7\char_383_snsant_2.png" style="width:600px" alt="">
+		<h3>JOGO JJJ Family </h3>
+		<p><br/><em>CSS inheritance</em> is the last piece we need to investigate to get all the
+		information and understand what style is applied to an element. The idea is that some property
+		values applied to an element will be inheritance by that element's children, and some won't.</p>
+
+	<ul>
+		<li>For exemple, it makes sense for font-family and color to be inheritance, as that makes it
+		easy for you to set a site-wide base font by applying a font-family to the <html> element; you
+		can then override the fonts on individual elements where needed. It would be really annoying
+		to have to set the base font separately on every element.</li>
+		<li>As another exemple, it makes sense for margin, pedding, border, and background-image to
+		NOT be inherited. Imagine the styling/layout mess that would occur if you set these properties
+		on a container element and had them inherited by every single child element, and than had to
+		unset them all on each individual element!</li>
+	</ul>
+		<p><small>&copy; YSupannika</small></p>
+	</div>
+	<div>
+	  <a href="..\index.html"><img src="..\img\menu_b\bindex.png" align="center" width="200px" ></a>
+	  <br>
+	  <a href="index.html"><img src="..\img\menu_b\chap _sum.png" align="center" width="200px" ></a>
+	</div>
+</body>
+</html>

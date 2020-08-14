@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<title>39_Element-selector</title>
+	<style>
+	/*	กำหนดการสร้างกล่อง class ชื่อ "box"	*/
+	.box{
+		border: 15px solid;
+		border-color:darkgray;
+		padding: 1em;
+		overflow:hidden;
+		background: white;
+	}
+	/* กำหนดการสร้าง ID ชื่อ "greenbox" ภายใต้ class ชื่อ "box" */
+	#greenbox {background: #ddffcc;}
+	</style>
+</head>
+<body>
+	<div class="box" id="greenbox">
+		<h2>Class and ID Selector</h2>
+	<p>
+		<em>การใช้ Class Selector</em>
+		---> การใช้ Selectors แบบ Class การประกาศเริ่มต้นด้วย (.) ตามด้วยชื่อ Class โดยชื่อ Class สามารถเป็นตัวอักษร ตัวเลข
+		เครื่องหมาย -,_ เท่านั้น ห้ามมีช่องว่าง วิธีการใช้งาน - Class Selectors เหมาะกับการใช้งานเมื่อต้องการแสดงผลรูปแบบนั้นซ้ำหลาย ๆ
+		ครั้งกับ elements หลาย ๆ อัน<br/>
+		<em>การใช้ ID Selector</em>
+		---> การใช้ Selectors แบบ ID การประกาศเริ่มต้นด้วย (#) ตามด้วยชื่อ ID โดยชื่อ ID สามารถเป็นตัวอักษร ตัวเลข เครื่องหมาย
+		-,_ เท่านั้น ห้ามมีช่องว่าง วิธีการใช้งาน - ID Selectors เหมาะกับการใช้งานเมื่อต้องการแสดงผลกับ element เพียงตัวเดียว เนื่องจาก
+		ID เป็น unique สามารถมีได้ 1 จุดต่อ document ถ้ามีการประกาศซ้ำจะแสดงผลเพียงครั้งเดียว
+	</p>
+	</div>
+	<div class="thebox2" style="text-align:center;">
+		<a href="..\index.html"><img src="..\img\menu_b\bindex.png" align="center" width="200px" ></a>
+		<br>
+		<a href="index.html"><img src="..\img\menu_b\chap _sum.png" align="center" width="200px" ></a>
+	</div>
+</body>
+</html>
