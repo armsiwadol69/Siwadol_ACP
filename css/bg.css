@@ -1,7 +1,7 @@
 body {
-	background: radial-gradient(circle, #69d5e0, #59cee7, #50c5ed, #53bcf1, #5fb2f2, #61a6ed, #659ae7, #6c8edf, #647fd4, #5c71c8, #5662bc, #5054b0);
+	background: radial-gradient(circle, rgba(233,67,67,1) 0%, rgba(144,78,149,1) 50%, rgba(193,115,183,1) 100%);
 	background-size: 400% 400%;
-	animation: gradient 13s ease infinite;
+	animation: gradient 7s ease infinite;
 
 
 }

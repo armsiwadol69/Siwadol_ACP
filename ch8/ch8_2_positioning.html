@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ch8_2_positioning.html</title>
+    <link rel="stylesheet" href="../css/bg_ch8.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+    body {font-family: 'Mitr', sans-serif;color:white}
+    .box {
+      width: 300px;
+      height:300px;
+      border-radius: 10px;
+      float:left;
+      margin-left:30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      #box1 {
+        position : relative;
+        left : 100px;
+        top : 10px;
+      }
+      #box2 {
+        position : relative;
+        left : 20px;
+        bottom : 30px;
+      }
+      #box3 {
+        position : relative;
+        left : 30px;
+        top : 60px;
+      }
+
+    </style>
+  </head>
+  <body style="margin-top:69px;">
+    <div style="float: none;">
+    <h1 style="margin-left:69px;">Positioning : Relative</h1>
+    <div class="box" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+      <h2>1st</h2>
+    </div>
+    <div class="box" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+      <h2>2nd</h2>
+    </div>
+    <div class="box" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+      <h2>3rd</h2>
+    </div>
+    <div class="box" id="box2" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+      <img src="img_ch8\chr_1.png" style="max-width:100%;border-radius: 10px;" alt="">
+    </div>
+    <div class="box" id="box3" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+      <img src="img_ch8\chr_2.png" style="max-width:100%;border-radius: 10px;" alt="">
+    </div>
+    <div class="box" id="box1" style="background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);margin-top:30px">
+      <img src="img_ch8\chr_3.png" style="max-width:100%;border-radius: 10px;" alt="">
+    </div>
+    </div>
+<div style="margin-top:700px;float: none;">
+    <h1 style="margin-left:69px">Positioning relative : vertical-align</h1>
+    <div class="">
+       <h3>default text</h3>
+       <h3 style="position:relative;left:50px">position:relative;left:50px</h3>
+       <h3 style="position:relative;left:100px">position:relative;left:100px</h3>
+       <h3 style="position:relative;right:100px">position:relative;right:100px</h3>
+       <h3 style="position:relative;right:-300px">position:relative;right:-300px</h3>
+       <h3 style="position:relative;right:-250px;bottom:90px">position:relative;right:-250px;bottom:90px</h3>
+    </div>
+</div>
+<div style="margin-top:10px;float: none;">
+    <h1 style="margin-left:69px">Positioning : absolute</h1>
+    <div class="">
+       <h3>default text</h3>
+       <h3 style="position:absolute;left:60px">position:absolute;left:60px</h3>
+       <h3 style="position:absolute;right:90px">position:absolute;right:90px</h3>
+    </div>
+</div>
+
+
+<div style="text-align:center;margin-top:200px">
+  <a href="..\index.html"><img src="..\img\menu_b\bindex.png" align="center" width="200px" ></a>
+  <br>
+  <a href="index.html"><img src="..\img\menu_b\chap _sum.png" align="center" width="200px" ></a>
+</div>
+  </body>
+</html>
