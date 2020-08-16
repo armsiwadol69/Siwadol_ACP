@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ch8_1_table.html</title>
+    <link rel="stylesheet" href="../css/bg_ch8.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+body {font-family: 'Mitr', sans-serif;color:white}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {padding: 15px;}
+.avatar {border-radius: 15px;width: 100%;max-width: 300px;height: auto;}
+.avatar2 {border-radius: 30px;width: 100%;max-width: 250px;height: auto;}
+</style>
+  </head>
+  <body>
+    <h2 style="margin-left:20px">Basic Table <code> padding: 15px;border: 1px solid black;border-collapse: collapse;</code> </h2>
+    <div style="">
+      <table style="width:80%;margin-left:auto;margin-right:auto;background:pink;">
+  <tr>
+    <th>Code Name</th>
+    <th>Class</th>
+    <th>Combat Experience</th>
+  </tr>
+  <tr>
+    <td>Snowsant</td>
+    <td>Specialist</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Mostima</td>
+    <td>Caster</td>
+    <td>1 Year</td>
+  </tr>
+  <tr>
+    <td>Pramanix</td>
+    <td>Supporter</td>
+    <td>Half a year</td>
+  </tr>
+</table>
+    </div>
+
+    <h2 style="margin-left:20px">Table With images(Responsive) /<code>padding: 15px;border: 1px solid black;border-collapse: collapse;</code> </h2>
+    <div style="">
+      <table style="width:80%;margin-left:auto;margin-right:auto;background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+    <tr>
+    <th>Photo</th>
+    <th>Code Name</th>
+    <th>Class</th>
+    <th>Combat Experience</th>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_1.png" class="avatar" alt=""> </td>
+    <td>Executor</td>
+    <td>Sniper</td>
+    <td>5 years</td>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_2.png" class="avatar" alt=""> </td>
+    <td>Ceylon</td>
+    <td>Medic</td>
+    <td>	No combat experiences</td>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_3.png" class="avatar" alt=""> </td>
+    <td>Silence</td>
+    <td>Medic</td>
+    <td>	No combat experiences</td>
+    </tr>
+    </table>
+    </div>
+
+    <h2 style="margin-left:20px">Table With images(Responsive) with Caption and "Cell spans" two columns /<code>padding: 15px;border: 1px solid black;border-collapse: collapse;</code> </h2>
+    <div style="">
+      <table style="width:90%;margin-left:auto;margin-right:auto;background: linear-gradient(90deg, rgba(255,0,112,1) 0%, rgba(129,88,173,1) 51%, rgba(115,151,193,1) 83%);color:white;">
+        <caption style="color:black;"><h1>Operator Stats</h1></caption>
+    <tr>
+    <th>Photo</th>
+    <th>Code Name</th>
+    <th>Class</th>
+    <th>Combat Experience</th>
+    <th colspan="2">MAX : ATK & HP</th>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_4.png" class="avatar2" alt=""> </td>
+    <td>Schwarz</td>
+    <td>Sniper</td>
+    <td>20 years</td>
+    <td>840</td>
+    <td>1833</td>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_5.png" class="avatar2" alt=""> </td>
+    <td>Mousse</td>
+    <td>Guard</td>
+    <td>Half a year</td>
+    <td>644</td>
+    <td>2345</td>
+    </tr>
+    <tr>
+    <td> <img src="img_ch8\chr_6.png" class="avatar2" alt=""> </td>
+    <td>Frostleaf</td>
+    <td>Guard</td>
+    <td>7 years</td>
+    <td>660</td>
+    <td>2260</td>
+    </tr>
+    </table>
+    </div>
+
+    <h2 style="margin-left:20px">Table With images(Responsive) with Caption and "spans two rows" /<code>padding: 15px;border: 1px solid black;border-collapse: collapse;</code> </h2>
+    <div style="">
+      <table style="width:90%;margin-left:auto;margin-right:auto;background: linear-gradient(90deg, rgba(44,82,158,1) 0%, rgba(58,223,236,1) 50%, rgba(156,235,192,1) 100%);">
+        <caption style="color:black;"><h1>Operator - Place of Birth And Date of Birth</h1></caption>
+        <tr>
+       <th>Code Name</th>
+       <td>Place of Birth And Date of Birth</td>
+       <td>Photo</td>
+     </tr>
+     <tr>
+       <th rowspan="2">Texas</th>
+       <td>Columbia</td>
+       <td rowspan="2"><img src="img_ch8\chr_7.png" class="avatar2" alt=""></td>
+     </tr>
+     <tr>
+       <td>Jun. 1</td>
+     </tr>
+     <tr>
+       <th rowspan="2">Magallan</th>
+       <td>Columbia</td>
+       <td rowspan="2"> <img src="img_ch8\chr_8.png" class="avatar2" alt=""> </td>
+     </tr>
+     <tr>
+       <td>October 17</td>
+     </tr>
+     <tr>
+       <th rowspan="2">Ptilopsis</th>
+       <td>Columbia</td>
+       <td rowspan="2"> <img src="img_ch8\chr_9.png" class="avatar2" alt=""> </td>
+     </tr>
+     <tr>
+       <td>October 6</td>
+     </tr>
+   </table>
+    </div>
+    <div style="text-align:center;">
+  	  <a href="..\index.html"><img src="..\img\menu_b\bindex.png" align="center" width="200px" ></a>
+  	  <br>
+  	  <a href="index.html"><img src="..\img\menu_b\chap _sum.png" align="center" width="200px" ></a>
+  	</div>
+  </body>
+</html>
