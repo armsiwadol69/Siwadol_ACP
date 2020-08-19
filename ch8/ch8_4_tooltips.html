@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CHAPTER 8 | SIWADOL</title>
+  <title>Tooltips</title>
 <link rel="stylesheet" href="../bootstrap4_data/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/bg_ch8.css">
 
@@ -69,7 +69,8 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-      <a href="index.html"><button type="button" class="btn btn-outline-warning">Chapter Content Section</button></a>
+      <a href="index.html"><button type="button" class="btn btn-outline-warning" style="margin-right:15px;">Chapter Content Section</button></a>
+      <span data-toggle="tooltip" data-placement="bottom" title="Trun On/Off &#013; Background Music."><button type="button" class="btn btn-dark" style="margin-right:0px;" data-toggle="modal" data-target="#sound">Sound Setting</button></span>
       </form>
     </div>
   </nav>
@@ -149,7 +150,7 @@
 </form>
 <span data-toggle="modal" data-target="#Login"><button style="margin-top:20px" class="btn btn-primary btn-block" data-placement="bottom" data-toggle="tooltip" title="Click to Login!">Login</button></span>
 <span data-toggle="modal" data-target="#Forgot"><button style="margin-top:20px" class="btn btn-warning btn-block" data-placement="bottom" data-toggle="tooltip" title="Click To Recovery Your BRAIN.">I FORGOT E-MAIL/PASSWORD AND EVERYTHING.</button></span>
-<a href="https://www.youtube.com/watch?v=wv-G-kM9pUs" target="_blank" type="button" style="margin-top:20px" class="btn btn-danger btn-block" data-placement="bottom" data-toggle="tooltip" title=";)">IF YOUR ARE Teacher.JUM PLEASE PRESS THE BUTTON</a>
+<a href="https://www.youtube.com/watch?v=wv-G-kM9pUs" target="_blank" type="button" style="margin-top:20px" class="btn btn-danger btn-block" data-placement="bottom" data-toggle="tooltip" title="ไผ่ พงศธร">IF YOUR ARE Teacher.JUM PLEASE PRESS THIS BUTTON.</a>
       </div>
       </div>
     </div>
@@ -248,6 +249,35 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="sound" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Setting : Sound</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align:center;">
+          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/tBd_QlnYwNg?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <script type="text/javascript">
+            var audio = document.getElementById("ostk");
+            audio.volume = 0.4;
+            audio.loop = true;
+            </script>
+            <script>
+            setTimeout(function(){
+                document.getElementById("ostk").play();}, 1500)
+
+            </script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
