@@ -351,15 +351,22 @@
           <source src="m/bgx.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+        <h6 class="text-muted">Turn Volume Up For Vocal. ;)</h6>
+        <audio controls id="vo">
+          <source src="m/vox.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
         <script type="text/javascript">
         var audio = document.getElementById("ostk");
         audio.volume = 0.3;
         audio.loop = true;
-        </script>
-        <script>
+        var audio = document.getElementById("vo");
+        audio.volume = 0;
+        audio.loop = true;
         setTimeout(function(){
-            document.getElementById("ostk").play();}, 1500)
-
+            document.getElementById("ostk").play();}, 1500);
+        setTimeout(function(){
+            document.getElementById("vo").play();}, 1500)
         </script>
       </div>
       <div class="modal-footer">
