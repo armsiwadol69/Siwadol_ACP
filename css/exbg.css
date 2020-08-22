@@ -1,0 +1,22 @@
+body {
+	background: linear-gradient(152deg, rgba(85,83,85,1) 7%, rgba(213,39,62,1) 50%, rgba(85,83,85,1) 85%);
+	background-size: 300% 300%;
+	animation: gradient 3s ease infinite;
+
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a {
+      text-decoration:none;
+   }
