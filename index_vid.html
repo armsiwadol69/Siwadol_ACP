@@ -48,7 +48,52 @@
   <body>
     <div class="video-background" style="opacity:0.5;">
     <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/M7FH1dL51oU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&iv_load_policy=3&playlist=M7FH1dL51oU" frameborder="0" allowfullscreen></iframe>
+      <div id="player">
+
+      </div>
+      <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '1920',
+          width: '1080',
+          videoId: 'M7FH1dL51oU',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          },
+          playerVars: {
+       'autoplay': 1,
+       'controls': 0,
+       'rel' : 0,
+       'fs' : 0,
+       'playlist': 'M7FH1dL51oU',
+       'loop' : 1,
+    
+   },
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.setPlaybackQuality('highres');
+        event.target.setVolume(40);
+        event.target.playVideo();
+
+      }
+      function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        event.target.setPlaybackQuality('highres');
+    }
+}
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
     </div>
   </div>
     <!--navbar -->
