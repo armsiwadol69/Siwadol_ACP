@@ -49,7 +49,6 @@
     <div class="video-background" style="opacity:0.5;">
     <div class="video-foreground">
       <div id="player">
-
       </div>
       <script>
       var tag = document.createElement('script');
@@ -80,13 +79,12 @@
         });
       }
       function onPlayerReady(event) {
-        event.target.setPlaybackQuality('highres');
-        event.target.setVolume(30);
+        event.target.setVolume(20);
         event.target.playVideo();
-
       }
+
       function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING) {
+      if (event.data == YT.PlayerState.BUFFERING) {
         event.target.setPlaybackQuality('highres');
     }
 }
