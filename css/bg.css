@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(180deg, rgba(85,83,85,0.6) 5%, rgba(213,39,62,0.2) 50%, rgba(85,83,85,0.6) 90%),url('../img/mud_bg1080.jpg');
+	background: linear-gradient(180deg, rgba(85,83,85,0.6) 5%, rgba(213,39,62,0.2) 50%, rgba(85,83,85,0.4) 90%),url('../img/mud_bg1080.jpg');
   background-size: 115%;
 	background-attachment: fixed;
 	animation: gradient 20s ease infinite;
