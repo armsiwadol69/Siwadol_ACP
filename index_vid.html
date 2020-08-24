@@ -20,6 +20,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="f/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap4_data/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bg_v.css">
     <link rel="stylesheet" href="css/exbg.css">
@@ -41,6 +42,7 @@
     }
     .card{background-color: rgba(0, 0, 0, 0.15);color:white;}
     .btn-cs{background-color: rgba(0, 0, 0, 0.25);width: 100%;color: white;border-width: 0.5px;;border-color :rgba(219, 26, 71, 0.5)}
+    .btn-cs2{background-color: rgba(96, 99, 108,0.3);color: white;border-width: 0.5px;border-color :rgba(96, 99, 108,0.5)}
 
     @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
     </style>
@@ -96,7 +98,7 @@
   </div>
     <!--navbar -->
     <div class="">
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
   <a class="navbar-brand" href="index.html">
     <img src="f/apple-icon.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
   </a>
@@ -134,9 +136,9 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-    <button type="button" class="btn btn-light" style="margin-right:10px;" data-toggle="modal" data-target="#changlog">Changlog</button>
-    <a href="index.html"><button type="button" style="margin-right:10px;" class="btn btn-warning" data-toggle="tooltip" data-placement="left" title="Back To Normal Index Page.">Switch : Sound Only</button></a>
-    <span data-toggle="tooltip" data-placement="bottom" title="Trun On/Off &#013; Background Music."><button type="button" class="btn btn-dark" style="margin-right:0px;" data-toggle="modal" data-target="#sound">Sound Setting</button></span>
+    <button type="button" class="btn btn-danger btn-cs2" style="margin-right:10px;" data-toggle="modal" data-target="#changlog">Changlog</button>
+    <a href="index.html"><button type="button" style="margin-right:10px;" class="btn btn-danger btn-cs2" data-toggle="tooltip" data-placement="left" title="Back To Normal Index Page.">Switch : Sound Only</button></a>
+    <span data-toggle="tooltip" data-placement="bottom" title="Trun On/Off &#013; Background Music."><button type="button" class="btn btn-danger btn-cs2" style="margin-right:0px;" data-toggle="modal" data-target="#sound">Sound Setting</button></span>
     </form>
   </div>
 </nav>
@@ -144,7 +146,7 @@
 <!--navbar -->
 <!--carousel -->
   <div id="ssimg" class="carousel slide" data-ride="carousel" style="max-width: 1200px;width: 100%;margin-left: auto;
-  margin-right: auto;" data-interval="4200" data-pause="hover">
+  margin-right: auto;margin-top:10px" data-interval="4200" data-pause="hover">
   <ul class="carousel-indicators">
     <li data-target="#ssimg" data-slide-to="0" class="active"></li>
     <li data-target="#ssimg" data-slide-to="1"></li>
