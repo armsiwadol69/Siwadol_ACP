@@ -85,7 +85,7 @@
         <a class="nav-link disabled" style="color:white;" aria-disabled="true">Ver.1.8.6 | Build:Astesia.Fallen Sky</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" style="color:white;" aria-disabled="true">Visit TiME : <span id="datetime"></span></a>
+        <a class="nav-link disabled" style="color:white;" aria-disabled="true">Visit TiME : <span id="time"></span></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -332,7 +332,8 @@
       Make Page look clearly and more Transparency. (customCSS)<br>
       Card and Button is now Transparency.<br>
       Fix Fullscreen Mode(F11) Video Background Too BIG.<br>
-      Move some style to .CSS
+      Move some style to .CSS <br>
+      8/26/2020 : Now Time On Navbar is LiVE TiME + MS.
 
       </div>
       <div class="modal-footer">
@@ -451,9 +452,33 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
+<script type="text/javascript">
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var d = today.getDate()
+  var m = today.getMonth() + 1
+  var y = today.getFullYear()
+  var mm = today.getMilliseconds()
+
+  // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML = m +"/"+ d +"/" + y + " | " + h + ":" + m + ":" + s + " : " + mm ;
+  t = setTimeout(function() {
+    startTime()
+  }, 69);
+}
+startTime();
 </script>
   </body>
 </html>
