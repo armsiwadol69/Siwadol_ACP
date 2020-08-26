@@ -22,10 +22,9 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap4_data/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bg_v.css" disabled>
-    <link rel="stylesheet" href="css/exbg.css" disabled>
     <link rel="stylesheet" href="css/bg_me.css">
     <link rel="stylesheet" href="css/hidesbar.css">
+    <link rel="stylesheet" href="css/fade.css">
     <style media="screen">
       @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap');
@@ -100,6 +99,7 @@
 </nav>
 </div>
 <!--navbar -->
+<div class="fade-in">
    <div class="container" style="margin-top: 30px">
      <div class="row">
        <div class="col-7">
@@ -132,7 +132,7 @@
      </div>
     </div>
     <div class="row" style="margin-top: 20px;">
-      <div class="col-8">
+      <div class="col-4">
         <div class="card text-white bg-secondary w-100 h-100 shadow" style="">
    <div class="card-header" style="font-size:20px">Skill And Interest.</div>
    <div class="card-body">
@@ -155,7 +155,22 @@
      </div>
       </div>
       </div>
-
+      <div class="col-4">
+        <div class="card text-white bg-primary w-100 h-100 shadow" style="">
+   <div class="card-header" style="font-size:20px">Competition</div>
+   <div class="card-body" style="text-align:center;">
+     <p class="card-title">CMS (Joomla) : Gold Medal (x2) <br> 2013,2015</p>
+     <blockquote class="blockquote text-center " style="font-size:17px">
+   <p class="mb-0">ฉันมาแข่งหรือมานั้งร้องเพลงกันแน่เนี่ย...</p>
+   <footer class="blockquote-footer text-white">Siwadol <cite title="Source Title" class="text-dark">ตอนพบว่าคอมแข่งลง XP</cite></footer>
+ </blockquote>
+     <hr>
+     <p class="card-title">Graphic Design (PS) : 3rd. (2017)</p>
+     <hr>
+     <p class="card-title">You can view refer in Portfolio(GDive)</p>
+     </div>
+      </div>
+      </div>
       <div class="col-4">
         <div class="card text-white bg-dark  w-100 h-100 shadow" style="">
    <div class="card-header" style="font-size:20px">Portfolio</div>
@@ -180,8 +195,7 @@
    <a class="dropdown-item" target="_blank" href="https://youtu.be/q5bwE_4Z64U" >Introduction : RMUTT</a>
  </div>
      </div>
-
-     <a href="https://drive.google.com/drive/folders/18bP565kVim2SOFMtjYIAvZR5-2-1o_c4?usp=sharing" targe t="_blank" class="btn btn-warning btn-block">Portfolio (GDrive.)</a>
+     <a href="https://drive.google.com/drive/folders/18bP565kVim2SOFMtjYIAvZR5-2-1o_c4?usp=sharing" target="_blank" class="btn btn-warning btn-block">Portfolio (GDrive.)</a>
      <a href="https://youtu.be/GeH11DvhngE" target="_blank" class="btn btn-success btn-block" data-toggle="tooltip" data-placement="bottom" title="เล่น กัน มันส์ ยก โรง">School's Event PV</a>
    </div>
       </div>
@@ -210,12 +224,11 @@
     </div>
     <div class="row" style="margin-top: 20px;">
       <div class="col-6">
-        <div class="card w-100 h-100 shadow">
+        <div class="card text-white bg-dark w-100 h-100 shadow">
           <div class="card-header" style="font-size:20px;">
           Contact & SNS
           </div>
   <div class="card-body">
-
     <a href="https://www.facebook.com/armsiwadol2543" target="_blank" class="btn btn-primary btn-block">Facebook</a>
     <a href="https://www.instagram.com/gametophyte_si_x/" target="_blank" class="btn btn-warning btn-block">Instagram</a>
     <a href="mailto: armsiwadol2543@gmail.com" class="btn btn-info btn-block">E-Mail : armsiwadol2543@gmail.com</a>
@@ -307,7 +320,7 @@
      </div>
     </div>
   </div>
-
+</div>
 
 
 
@@ -360,9 +373,14 @@
       </div>
       <div class="modal-body" style="text-align:center;">
         <img src="img\retryment.jpg" class="rounded shadow" style="max-width:85%" alt="">
-        <h6 class="text-danger" style="margin-top:10px">Now Playing : Hotaru Murasaki | Re:TrymenT -InstrumentaL- <br> From Re:lief </h6>
+        <h6 class="text-danger" style="margin-top:10px">Now Playing : Hotaru Murasaki | Re:TrymenT <br> From Re: LieF ~Shin'ainaru Anata e~ </h6>
         <audio controls id="ostk">
           <source src="m/ReTrymenT_BG.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <h6 class="text-muted">Turn Volume Up For Vocal. ;)</h6>
+        <audio controls id="vo">
+          <source src="m/ReTrymenT_VO.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
         <script type="text/javascript">
@@ -371,6 +389,12 @@
         audio.loop = true;
         setTimeout(function(){
             document.getElementById("ostk").play();}, 1000);
+        var audio = document.getElementById("vo");
+        audio.volume = 0;
+        audio.loop = true;
+        setTimeout(function(){
+            document.getElementById("vo").play();}, 1000);
+
         </script>
       </div>
       <div class="modal-footer">
