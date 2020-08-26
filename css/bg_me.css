@@ -1,0 +1,23 @@
+body {
+	background: linear-gradient(152deg, rgba(85,83,85,0.3) 7%, rgba(213,39,62,0.3) 50%, rgba(85,83,85,0.3) 85%),url('../img/oversky.jpg');
+	background-size: 110% ;
+	animation: gradient 20s ease infinite;
+	background-attachment: fixed;
+
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a {
+      text-decoration:none;
+   }

@@ -99,7 +99,7 @@
   </div>
     <!--navbar -->
     <div class="">
-<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background:rgba(96, 99, 108,0.3)">
   <a class="navbar-brand" href="index.html">
     <img src="f/apple-icon.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
   </a>
@@ -113,8 +113,14 @@
       <li class="nav-item active">
         <a class="nav-link" href="#" data-toggle="modal" data-target="#youarehere">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" target="_blank" href="https://github.com/armsiwadol69/" data-toggle="tooltip" data-placement="bottom" title="GitHub's Proile.">Profile</a>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile & About Me
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="aboutme.html">Siwadol's Profile</a>
+          <a class="dropdown-item" href="https://github.com/armsiwadol69/" target="_blank">GitHub's Profile</a>
+        </div>
       </li>
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -255,6 +261,26 @@
       </div>
        </div>
       </div>
+      <div class="col-4">
+        <div class="card shadow-sm">
+      <div class="card-header">
+      <h3>Profile & About Me!</h3>
+      </div>
+      <div class="card-body">
+      <h5 class="card-title">About Me!</h5>
+      <p class="card-text"> </p>
+      <div class="dropdown">
+  <button class="btn btn-cs btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Profile&Abou Me.
+  </button>
+  <div class="dropdown-menu" style="width:100%" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="aboutme.html">Siwadol's Profile</a>
+    <a class="dropdown-item" href="https://github.com/armsiwadol69/" target="_blank">GitHub's Profile</a>
+  </div>
+      </div>
+       </div>
+      </div>
+    </div>
     </div>
   </div>
 <div class="container" style="margin-top: 100px; ">
@@ -369,7 +395,7 @@
       Card and Button is now Transparency.<br>
       Fix Fullscreen Mode(F11) Video Background Too BIG.<br>
       Move some style to .CSS <br>
-      8/26/2020 : Now Time On Navbar is LiVE TiME + MS.
+      8/26/2020 : Now Time On Navbar is LiVE TiME + MS. <br> New Page! : About Me!
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
