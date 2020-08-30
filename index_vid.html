@@ -23,12 +23,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap4_data/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bg_v.css">
-    <link rel="stylesheet" href="css/exbg.css">
     <link rel="stylesheet" href="css/hidesbar.css">
     <style media="screen">
       @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+      body {
+      	background-image: radial-gradient(circle, #9b9b9b, #878787, #747474, #616161, #4f4f4f);
+      	background-size: 400% 400%;
+      	animation: gradient 5s ease infinite;
+
+      }
+
+      @keyframes gradient {
+      	0% {
+      		background-position: 0% 50%;
+      	}
+      	50% {
+      		background-position: 100% 50%;
+      	}
+      	100% {
+      		background-position: 0% 50%;
+      	}
+      }
+      a {
+            text-decoration:none;
+         }
+
       body {
         font-family: 'Quicksand', sans-serif;
       }
@@ -81,16 +102,13 @@
       }
       function onPlayerReady(event) {
         event.target.setVolume(30);
-        event.target.setPlaybackQuality('highres');
         event.target.playVideo();
-
       }
 
       function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.BUFFERING) {
-        event.target.setPlaybackQuality('highres');
-    }
+
 }
+
       function stopVideo() {
         player.stopVideo();
       }
@@ -186,10 +204,7 @@
 </div>
 <!--carousel -->
   <div class="" hidden>
-    <div style="background-color: rgba(0,0,0,0);text-align:center;margin-left: auto;margin-right: auto;">
-      <img style="max-width: 1200px;width: 100%;height: auto;"src="img\ss3.png" alt="">
 
-    </div>
     <div class="jumbotron jumbotron-fluid" style="background-color: rgba(0,0,0,0);height: 150px;">
   <div class="container">
     <h1 class="display-4" style="color:white;">Chapter Section</h1>
@@ -245,7 +260,7 @@
   <div class="card-body">
     <h5 class="card-title">Chapter 7 is Now Available!</h5>
     <p class="card-text"> </p>
-    <a href="ch7/index.html" class="btn btn-cs btn-danger" data-placement="bottom" data-toggle="tooltip" title="Available : Type α&amp;β">View&nbsp;<span class="badge badge-danger">New</span></a>
+    <a href="ch7/index.html" class="btn btn-cs btn-danger" data-placement="bottom" data-toggle="tooltip" title="Available : Type α&amp;β">View</a>
   </div>
        </div>
       </div>
@@ -257,21 +272,21 @@
       <div class="card-body">
       <h5 class="card-title">Chapter 8 is Now Available!</h5>
       <p class="card-text"> </p>
-      <a href="ch8/index.html" class="btn btn-cs btn-danger" data-placement="bottom" data-toggle="tooltip" title="Available : Type β">View&nbsp;<span class="badge badge-danger">New</span></a>
+      <a href="ch8/index.html" class="btn btn-cs btn-danger" data-placement="bottom" data-toggle="tooltip" title="Available : Type β">View</a>
       </div>
        </div>
       </div>
       <div class="col-4">
         <div class="card shadow-sm w-100 h-100">
       <div class="card-header">
-      <h3>EX:Profile&About Me!</h3>
+      <h3>EX : Profile & About Me</h3>
       </div>
       <div class="card-body">
       <h5 class="card-title">About Me!</h5>
       <p class="card-text"> </p>
       <div class="dropdown">
   <button class="btn btn-cs btn-block btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    View Profile&About Me.
+    View Profile & About Me
   </button>
   <div class="dropdown-menu" style="width:100%" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="aboutme.html">Siwadol's Profile</a>
@@ -433,7 +448,7 @@
         </button>
       </div>
       <div class="modal-body" style="text-align:center;">
-        <img src="img\fallsky.jpg" class="rounded" style="max-width:90%" alt="">
+        <img src="img\fallsky.jpg" class="rounded shadow" style="max-width:90%" alt="">
         <h6 class="text-danger" style="margin-top:10px">Now Playing : ツユ - 泥の分際で私だけの大切を奪おうだなんて <br> TUYU - Being Low As Dirt, Taking What's Important From Me </h6>
         <a href="https://youtu.be/M7FH1dL51oU" target="_blank" type="button" style="width:80%;margin-left:auto;margin-right:auto;" class="btn btn-block btn-danger">Go To Youtube.</a>
       </div>
