@@ -54,7 +54,7 @@
 </head>
 <body>
 <div class="">
-  <nav class="navbar navbar-expand-lg navbar-light text-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="../index.html">
       <img src="../f/apple-icon.png" class="rounned" width="30" height="30" class="d-inline-block align-top" alt="">
     </a>
@@ -94,7 +94,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-      <span data-toggle="tooltip" data-placement="bottom" title="Trun On/Off &#013; Background Music."><button type="button" class="btn btn-dark" style="margin-right:0px;" data-toggle="modal" data-target="#sound">Sound Setting</button></span>
+      <span data-toggle="tooltip" data-placement="bottom" title="Trun On/Off &#013; Background Music."><button type="button" class="btn btn-dark shadow" style="margin-right:0px;" data-toggle="modal" data-target="#sound">Sound Setting</button></span>
       </form>
     </div>
   </nav>
@@ -270,16 +270,18 @@
             </button>
           </div>
           <div class="modal-body" style="text-align:center;">
-            <h6 style="color:black;">Wings of Courage -空を超えて- piano style(instrumental ver.)</h6>
-            <audio controls autoplay id="ch7_m">
-              <source src="../m/woc.mp3" type="audio/mpeg">
+            <h6 style="color:black;">Yokoyama Masaru | Spring String</h6>
+            <audio controls id="ch8_m">
+              <source src="../m/ch8.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
             <br>
             <script type="text/javascript">
-            var audio = document.getElementById("ch7_m");
-            audio.volume = 0.2;
+            var audio = document.getElementById("ch8_m");
+            audio.volume = 0.4;
             audio.loop = true;
+            setTimeout(function(){
+                document.getElementById("ch8_m").play();}, 500)
             </script>
           </div>
           <div class="modal-footer">
